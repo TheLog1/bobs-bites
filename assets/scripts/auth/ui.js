@@ -20,6 +20,7 @@ const signInSuccess = function (response) {
   $('#sign-up-button').hide()
   $('#sign-in-button').hide()
   $('#change-password-button').show()
+  $('#start-page').remove()
 }
 const signInFailure = function () {
   $('#message').text('Sign in failed')
