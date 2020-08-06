@@ -38,6 +38,16 @@ const showChangePassword = function (event) {
 const showSignUp = function (event) {
   event.preventDefault()
   $('#sign-up').show()
+  $('#sign-up-button').hide()
+  $('#sign-in').hide()
+  $('#sign-in-button').show()
+}
+const showSignIn = function (event) {
+  event.preventDefault()
+  $('#sign-in').show()
+  $('#sign-up').hide()
+  $('#sign-in-button').hide()
+  $('#sign-up-button').show()
 }
 
 module.exports = {
@@ -46,5 +56,6 @@ module.exports = {
   onChangePassword,
   onSignOut,
   showSignUp,
-  showChangePassword
+  showChangePassword,
+  showSignIn
 }

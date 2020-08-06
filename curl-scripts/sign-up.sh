@@ -1,4 +1,7 @@
-curl "https://tic-tac-toe-api-development.herokuapp.com/sign-up" \
+API="http://localhost:7165"
+URL_PATH="/sign-up"
+
+curl "${API}${URL_PATH}" \
   --include \
   --request POST \
   --header "Content-Type: application/json" \

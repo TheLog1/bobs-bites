@@ -17,12 +17,9 @@ body {
   color: $color3;
 }
 
-.main-page {
-  background-color: $color2;
-  border: 10px double $color4;
-  border-radius: 20px;
-  display: flex;
-  margin-top: 100px;
+.message {
+  color: $color3;
+  font-size: 20px;
 }
 
 .sign-in-button {
@@ -33,6 +30,28 @@ body {
 }
 
 .sign-up-button {
+  background-color: $color3;
+  border: 5px double $color4;
+  border-radius: 20px;
+  color: $color2;
+}
+
+.signIn-signUp {
+  background-color: $color2;
+  border: 10px double $color4;
+  border-radius: 20px;
+  display: flex;
+  margin-top: 100px;
+}
+
+.submit-sign-in {
+  background-color: $color3;
+  border: 5px double $color4;
+  border-radius: 20px;
+  color: $color2;
+}
+
+.submit-sign-up {
   background-color: $color3;
   border: 5px double $color4;
   border-radius: 20px;

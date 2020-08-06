@@ -1,9 +1,15 @@
 const store = require('../store')
 const signUpSuccess = function () {
   $('#message').text('Successfully signed up! Now Sign In!')
+  $('#sign-in').show()
+  $('#sign-up').hide()
+  $('#sign-in').show()
+  $('#sign-up')[0].reset()
 }
 const signUpFailure = function () {
   $('#message').text('Sign Up failed :(')
+  $('#sign-up')[0].reset()
+  $('#sign-in')[0].reset()
 }
 const signInSuccess = function (response) {
   $('#message').text('Sign in Success!')
@@ -12,11 +18,14 @@ const signInSuccess = function (response) {
   $('#sign-up').hide()
   $('#sign-in').hide()
   $('#sign-up-button').hide()
+  $('#sign-in-button').hide()
   $('#change-password-button').show()
 }
 const signInFailure = function () {
   $('#message').text('Sign in failed')
   $('#sign-up').show()
+  $('#sign-in')[0].reset()
+  $('#sign-up-button').hide()
 }
 const changePasswordSuccess = function () {
   $('#message').text('change password success!')
