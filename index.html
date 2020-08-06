@@ -26,7 +26,28 @@
           <button type="submit">change password</button>
         </form>
         <div class="signed-in-message"id="signed-in-message"></div>
-         <button class="sign-out" id="sign-out">Sign Out</button>
+        <button class="start-report" id="start-report">Start Report!</button>
+        <button class="sign-out" id="sign-out">Sign Out</button><br>
+        <form id="report">
+          <label for="species">What Species Bit You?:</label>
+          <input name="species" placeholder="Species" type="text"><br>
+          <label for="potency">Venom Potency From 1-10:</label>
+            <select id="potency" name="potency">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+            <label for="bite-info">Tell Me About Your Bite In Detail:</label>
+            <input name="bite-info" placeholder="Bite Info" type="text">
+
+        </form>
       </div>
      <div id="main-page" style="height: 400px" class="main-page">
         <div id="start-page" class="text-center mx-auto h-100 col-6 signIn-signUp">

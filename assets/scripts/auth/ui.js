@@ -37,6 +37,7 @@ const changePasswordSuccess = function () {
 }
 const changePasswordFailure = function () {
   $('#signed-in-message').text('change password failed :(')
+  $('#change-password')[0].reset()
 }
 const signOutSuccess = function () {
   $('#message').text('sign out success!')

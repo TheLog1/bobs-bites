@@ -19,7 +19,7 @@ body {
 
 .change-password-button {
   background-color: $color3;
-  border: 10px double $color4;
+  border: 7px double $color4;
   border-radius: 20px;
   color: $color2;
 }
@@ -29,11 +29,15 @@ body {
   font-size: 20px;
 }
 
+.label {
+  color: $color3;
+  font-size: 20px;
+}
+
 .report-page {
   background-color: $color2;
   border: 10px double $color4;
   border-radius: 20px;
-  display: flex;
   height: auto;
   margin-top: 50px;
 }
@@ -67,7 +71,14 @@ body {
 
 .sign-out {
   background-color: $color3;
-  border: 10px double $color4;
+  border: 7px double $color4;
+  border-radius: 20px;
+  color: $color2;
+}
+
+.start-report {
+  background-color: $color3;
+  border: 7px double $color4;
   border-radius: 20px;
   color: $color2;
 }
