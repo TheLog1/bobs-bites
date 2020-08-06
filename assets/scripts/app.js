@@ -10,6 +10,7 @@ $(() => {
   $('#sign-in').hide()
   $('#sign-out').hide()
   $('#sign-up').hide()
+  $('#report-page').hide()
   $('#change-password-button').hide()
   $('#change-password').hide()
   $('#sign-up-button').on('click', authEvents.showSignUp)

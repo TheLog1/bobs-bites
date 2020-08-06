@@ -17,9 +17,25 @@ body {
   color: $color3;
 }
 
+.change-password-button {
+  background-color: $color3;
+  border: 10px double $color4;
+  border-radius: 20px;
+  color: $color2;
+}
+
 .message {
   color: $color3;
   font-size: 20px;
+}
+
+.report-page {
+  background-color: $color2;
+  border: 10px double $color4;
+  border-radius: 20px;
+  display: flex;
+  height: auto;
+  margin-top: 50px;
 }
 
 .sign-in-button {
@@ -36,6 +52,11 @@ body {
   color: $color2;
 }
 
+.signed-in-message {
+  color: $color3;
+  font-size: 20px;
+}
+
 .signIn-signUp {
   background-color: $color2;
   border: 10px double $color4;
@@ -44,16 +65,23 @@ body {
   margin-top: 100px;
 }
 
+.sign-out {
+  background-color: $color3;
+  border: 10px double $color4;
+  border-radius: 20px;
+  color: $color2;
+}
+
 .submit-sign-in {
   background-color: $color3;
   border: 5px double $color4;
-  border-radius: 20px;
+  border-radius: 10px;
   color: $color2;
 }
 
 .submit-sign-up {
   background-color: $color3;
   border: 5px double $color4;
-  border-radius: 20px;
+  border-radius: 10px;
   color: $color2;
 }

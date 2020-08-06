@@ -12,7 +12,7 @@ const signUpFailure = function () {
   $('#sign-in')[0].reset()
 }
 const signInSuccess = function (response) {
-  $('#message').text('Sign in Success!')
+  $('#signed-in-message').text('Sign in Success!')
   store.user = response.user
   $('#sign-out').show()
   $('#sign-up').hide()
@@ -20,7 +20,10 @@ const signInSuccess = function (response) {
   $('#sign-up-button').hide()
   $('#sign-in-button').hide()
   $('#change-password-button').show()
-  $('#start-page').remove()
+  $('#start-page').hide()
+  $('#report-page').show()
+  $('#sign-in')[0].reset()
+  $('#change-password').hide()
 }
 const signInFailure = function () {
   $('#message').text('Sign in failed')
@@ -29,20 +32,24 @@ const signInFailure = function () {
   $('#sign-up-button').hide()
 }
 const changePasswordSuccess = function () {
-  $('#message').text('change password success!')
+  $('#signed-in-message').text('change password success!')
+  $('#change-password')[0].reset()
 }
 const changePasswordFailure = function () {
-  $('#message').text('change password failed :(')
+  $('#signed-in-message').text('change password failed :(')
 }
 const signOutSuccess = function () {
   $('#message').text('sign out success!')
   store.user = null
   $('#sign-out').hide()
-  $('#sign-in').show()
   $('#change-password-button').hide()
+  $('#report-page').hide()
+  $('#start-page').show()
+  $('#sign-up-button').show()
+  $('#sign-in-button').show()
 }
 const signOutFailure = function () {
-  $('#message').text('sign out failed')
+  $('#signed-in-message').text('sign out failed')
 }
 
 module.exports = {
