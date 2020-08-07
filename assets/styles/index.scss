@@ -5,6 +5,12 @@ $color2: #333333;
 $color3: #33cc00;
 $color4: #8000ff;
 
+.bite-info {
+  color: $color3;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
 body {
   background-color: #2a2f2a;
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Ehoundstooth%3C/title%3E%3Cg fill='%234cdf1e' fill-opacity='0.49' fill-rule='evenodd'%3E%3Cpath d='M0 18h6l6-6v6h6l-6 6H0M24 18v6h-6M24 0l-6 6h-6l6-6M12 0v6L0 18v-6l6-6H0V0'/%3E%3C/g%3E%3C/svg%3E");
@@ -17,6 +23,13 @@ body {
   color: $color3;
 }
 
+.change-password-submit {
+  background-color: $color3;
+  border: 7px double $color4;
+  border-radius: 20px;
+  color: $color2;
+}
+
 .change-password-button {
   background-color: $color3;
   border: 7px double $color4;
@@ -24,13 +37,26 @@ body {
   color: $color2;
 }
 
+.false-button {
+  color: $color3;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.med-sig {
+  color: $color3;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
 .message {
   color: $color3;
   font-size: 20px;
 }
 
-.label {
+.potency {
   color: $color3;
+  font-family: sans-serif;
   font-size: 20px;
 }
 
@@ -76,7 +102,20 @@ body {
   color: $color2;
 }
 
+.species {
+  color: $color3;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
 .start-report {
+  background-color: $color3;
+  border: 7px double $color4;
+  border-radius: 20px;
+  color: $color2;
+}
+
+.submit-report {
   background-color: $color3;
   border: 7px double $color4;
   border-radius: 20px;
@@ -95,4 +134,10 @@ body {
   border: 5px double $color4;
   border-radius: 10px;
   color: $color2;
+}
+
+.true-button {
+  color: $color3;
+  font-family: sans-serif;
+  font-size: 20px;
 }

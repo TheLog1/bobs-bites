@@ -23,15 +23,15 @@
         <form id="change-password">
           <input name="passwords[old]" placeholder="old password" type="password">
           <input name="passwords[new]" placeholder="new password" type="password">
-          <button type="submit">change password</button>
+          <button type="submit" class="change-password-submit">change password</button>
         </form>
+        <button class="sign-out" id="sign-out">Sign Out</button><br>
         <div class="signed-in-message"id="signed-in-message"></div>
         <button class="start-report" id="start-report">Start Report!</button>
-        <button class="sign-out" id="sign-out">Sign Out</button><br>
         <form id="report">
-          <label for="species">What Species Bit You?:</label>
+          <label for="species" class="species">What Species Bit You?:</label>
           <input name="species" placeholder="Species" type="text"><br>
-          <label for="potency">Venom Potency From 1-10:</label>
+          <label for="potency" class="potency">Venom Potency From 1-10:</label>
             <select id="potency" name="potency">
               <option value="1">1</option>
               <option value="2">2</option>
@@ -44,9 +44,14 @@
               <option value="9">9</option>
               <option value="10">10</option>
             </select><br>
-            <label for="bite-info">Tell Me About Your Bite In Detail:</label>
-            <input name="bite-info" placeholder="Bite Info" type="text">
-
+          <label for="bite-info" class="bite-info">Tell Me About Your Bite In Detail:</label>
+          <textarea name="bite-info" class="bite-info-box" rows="2" cols="20"></textarea><br>
+        <label for="med-sig" class="med-sig">Should You Go To The Hospital?</label>
+          <select id="med-sig" name="med-sig">
+            <option value=true>Yes</option>
+            <option value=false>No</option>
+          </select><br>
+          <button class="submit-report"type="submit">Submit Your Report!</button>
         </form>
       </div>
      <div id="main-page" style="height: 400px" class="main-page">
