@@ -17,7 +17,16 @@ const submitReport = function (event) {
     .catch(ui.createReportFailure)
 }
 
+const showReports = function (event) {
+  event.preventDefault()
+  $('.reports-index').empty()
+  api.indexReports()
+    .then(ui.showReportsSuccess)
+    .catch(ui.showReportFailure)
+}
+
 module.exports = {
   showReport,
-  submitReport
+  submitReport,
+  showReports
 }

@@ -24,5 +24,6 @@ $(() => {
   // now for my report events
   $('#report').hide()
   $('#start-report').on('click', reportEvents.showReport)
-  $('#submit-report').on('submit', reportEvents.submitReport)
+  $('#report').on('submit', reportEvents.submitReport)
+  $('#show-reports-button').on('click', reportEvents.showReports)
 })

@@ -5,6 +5,8 @@ $color2: #333333;
 $color3: #33cc00;
 $color4: #8000ff;
 
+
+
 .bite-info {
   color: $color3;
   font-family: sans-serif;
@@ -37,13 +39,7 @@ body {
   color: $color2;
 }
 
-.false-button {
-  color: $color3;
-  font-family: sans-serif;
-  font-size: 20px;
-}
-
-.med-sig {
+.medicallySignificant {
   color: $color3;
   font-family: sans-serif;
   font-size: 20px;
@@ -60,12 +56,32 @@ body {
   font-size: 20px;
 }
 
+.report-window {
+  border: 10px double $color4;
+  border-radius: 20px;
+  color: $color3;
+  padding: 15px;
+}
+
+.reports-index-info {
+  background-color: #545454;
+  border: 5px solid $color4;
+  border-radius: 15px;
+}
+
 .report-page {
   background-color: $color2;
   border: 10px double $color4;
   border-radius: 20px;
   height: auto;
   margin-top: 50px;
+}
+
+.show-reports-button {
+  background-color: $color3;
+  border: 7px double $color4;
+  border-radius: 20px;
+  color: $color2;
 }
 
 .sign-in-button {
@@ -134,10 +150,4 @@ body {
   border: 5px double $color4;
   border-radius: 10px;
   color: $color2;
-}
-
-.true-button {
-  color: $color3;
-  font-family: sans-serif;
-  font-size: 20px;
 }
