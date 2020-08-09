@@ -48,6 +48,7 @@ const signOutSuccess = function () {
   $('#start-page').show()
   $('#sign-up-button').show()
   $('#sign-in-button').show()
+  $('.reports-index').empty()
 }
 const signOutFailure = function () {
   $('#signed-in-message').text('sign out failed')

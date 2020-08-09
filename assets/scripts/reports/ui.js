@@ -14,6 +14,7 @@ const createReportSuccess = function () {
 }
 
 const showReportsSuccess = function (res) {
+  $('.report-index').empty()
   const reportsPageTemplate = require('../../templates/reports-page.handlebars')
   const reportsPageHtml = reportsPageTemplate({ reports: res.reports })
   $('.reports-index').append(reportsPageHtml)
@@ -24,6 +25,14 @@ const showReportsSuccess = function (res) {
       .then(deleteReportSuccess)
       .catch(deleteReportFailure)
   })
+
+  $('.reports-index').on('click', '.show-one-report', (event) => {
+    event.preventDefault()
+    const reportId = $(event.target).closest('section').data('id')
+    api.showOneReport(reportId)
+      .then(showReportSuccess)
+      .catch(showReportFailure)
+  })
 }
 
 const showReportsFailure = function () {
@@ -31,9 +40,11 @@ const showReportsFailure = function () {
 }
 
 const showReportSuccess = function (res) {
-  const reportsPageTemplate = require('../../templates/reports-page.handlebars')
-  const reportsPageHtml = reportsPageTemplate({ reports: res.reports })
-  $('.reports-index').append(reportsPageHtml)
+  $('.reports-index').empty()
+  $('.report-index').empty()
+  const reportPageTemplate = require('../../templates/report-page.handlebars')
+  const reportPageHtml = reportPageTemplate({ report: res.report })
+  $('.report-index').append(reportPageHtml)
 }
 
 const showReportFailure = function () {

@@ -1,5 +1,5 @@
 
-{{#each reports as |report|}}
+{{log report}}
  <section class="report-window" data-id="{{report._id}}">
    <h3>
      {{report.species}}
@@ -19,7 +19,5 @@
    <p>Bite Info:</p>
    {{report.info}}
    </div>
-   <a href="#" class="btn btn-danger delete-report">delete</a>
-   <a href="#" class="btn btn-success show-one-report">Show This Report</a>
+   <a href="#" class="btn btn-warning update-report">update</a>
  </section>
-{{/each}}
