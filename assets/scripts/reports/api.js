@@ -22,7 +22,7 @@ const indexReports = function () {
   })
 }
 
-const showReport = function (id) {
+const showOneReport = function (id) {
   return $.ajax({
     headers: {
       Authorization: 'Bearer ' + store.user.token
@@ -31,8 +31,32 @@ const showReport = function (id) {
   })
 }
 
+const updateReport = function (formData) {
+  return $.ajax({
+    method: 'PATCH',
+    url: config.apiUrl + '/reports/' + formData.report.id,
+    data: {
+      report: {
+        info: formData.report.info
+      }
+    }
+  })
+}
+
+const deleteReport = (reportId) => {
+  return $.ajax({
+    url: config.apiUrl + '/reports/' + reportId,
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
+    },
+    method: 'DELETE'
+  })
+}
+
 module.exports = {
   createReport,
   indexReports,
-  showReport
+  showOneReport,
+  updateReport,
+  deleteReport
 }

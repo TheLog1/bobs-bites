@@ -1,0 +1,20 @@
+{{#each reports as |report|}}
+  {{log report}}
+  <section data-id="{{report._id}}">
+    <h6>Title: {{report.species}}</h6>
+    <h3>
+      {{report.potency}}
+    </h2>
+    <h6>Author:</h6>
+    <p>
+      {{#if report.medicallySignificant}}
+        Yes
+      {{else}}
+        No
+      {{/if}}
+    </p>
+    <a href="#" class="delete-report">delete</a>
+
+  </section>
+
+{{/each}}

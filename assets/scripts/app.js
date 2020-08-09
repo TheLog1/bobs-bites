@@ -23,7 +23,5 @@ $(() => {
   $('#sign-out').on('click', authEvents.onSignOut)
   // now for my report events
   $('#report').hide()
-  $('#start-report').on('click', reportEvents.showReport)
-  $('#report').on('submit', reportEvents.submitReport)
-  $('#show-reports-button').on('click', reportEvents.showReports)
+  reportEvents.addHandlers()
 })

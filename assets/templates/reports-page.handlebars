@@ -1,23 +1,19 @@
-<div class="container">
-   <h2>Reports: </h2>
-   <div id="reports">
-   {{#each reports as |report|}}
-     <div class="report-window">
-       <h3>
-         {{report.species}}
-       </h3>
-       <div class="report-potency">
-       Bite Potency 1-10 : {{report.potency}}
-       </div>
-       <div class="report-med-sig">
-       Do You Have To Go To The Hospital? {{report.medicallySignificant}}
-       </div>
-       <div class="card card-body reports-index-info">
-       <p>Bite Info:</p>
-       {{report.info}}
-       </div>
-       <button type="submit" class="btn btn-danger delete-report">Remove</button>
-     </div>
-   {{/each}}
- </div>
-</div>
+
+{{#each reports as |report|}}
+ <section class="report-window" data-id="{{report._id}}">
+   <h3>
+     {{report.species}}
+   </h3>
+   <div class="report-potency">
+   Bite Potency 1-10 : {{report.potency}}
+   </div>
+   <div class="report-med-sig">
+   Do You Have To Go To The Hospital? {{report.medicallySignificant}}
+   </div>
+   <div class="card card-body reports-index-info">
+   <p>Bite Info:</p>
+   {{report.info}}
+   </div>
+   <a href="#" class="btn btn-danger delete-report">delete</a>
+ </section>
+{{/each}}
