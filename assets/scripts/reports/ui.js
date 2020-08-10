@@ -97,6 +97,7 @@ const showReportSuccess = function (res) {
 const updateReportSuccess = function () {
   // showing the updated reports
   $('#show-reports-button').click()
+  $('.reports-index').empty()
   // success message
   $('#signed-in-message-2').text('Report Updated!')
 }
@@ -113,6 +114,7 @@ const deleteReportSuccess = function () {
   $('#signed-in-message-2').text('Report Deleted!')
   // showing the reports
   $('#show-reports-button').click()
+  $('.reports-index').empty()
 }
 
 const deleteReportFailure = function () {
