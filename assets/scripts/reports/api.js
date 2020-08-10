@@ -4,7 +4,7 @@ const store = require('../store')
 const createReport = function (formData) {
   return $.ajax({
     method: 'POST',
-    url: config.apiUrl + 'reports',
+    url: config.apiUrl + '/reports',
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
@@ -17,7 +17,7 @@ const indexReports = function () {
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
-    url: config.apiUrl + 'reports'
+    url: config.apiUrl + '/reports'
   })
 }
 
@@ -26,7 +26,7 @@ const showOneReport = function (id) {
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
-    url: config.apiUrl + 'reports/' + id
+    url: config.apiUrl + '/reports/' + id
   })
 }
 
@@ -36,7 +36,7 @@ const updateReport = function (formData) {
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
-    url: config.apiUrl + 'reports/' + formData.reportId,
+    url: config.apiUrl + '/reports/' + formData.reportId,
     data: {
       report: {
         info: formData.info
@@ -47,7 +47,7 @@ const updateReport = function (formData) {
 
 const deleteReport = (reportId) => {
   return $.ajax({
-    url: config.apiUrl + 'reports/' + reportId,
+    url: config.apiUrl + '/reports/' + reportId,
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },

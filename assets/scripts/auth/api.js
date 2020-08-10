@@ -4,14 +4,14 @@ const store = require('../store')
 // config will be { apiUrl: 'theapiurl' }
 const signUp = function (formData) {
   return $.ajax({
-    url: config.apiUrl + 'sign-up',
+    url: config.apiUrl + '/sign-up',
     method: 'POST',
     data: formData
   })
 }
 const signIn = function (formData) {
   return $.ajax({
-    url: config.apiUrl + 'sign-in',
+    url: config.apiUrl + '/sign-in',
     method: 'POST',
     data: formData
   })
@@ -21,14 +21,14 @@ const changePassword = function (formData) {
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
-    url: config.apiUrl + 'change-password',
+    url: config.apiUrl + '/change-password',
     method: 'PATCH',
     data: formData
   })
 }
 const signOut = function () {
   return $.ajax({
-    url: config.apiUrl + 'sign-out',
+    url: config.apiUrl + '/sign-out',
     method: 'DELETE',
     headers: {
       Authorization: 'Bearer ' + store.user.token
