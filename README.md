@@ -1,15 +1,15 @@
 # Bobs Bites application
-
+https://github.com/TheLog1/bobs-bites
 # Bobs Bites API
+https://github.com/TheLog1/bobs-bites-api
 
-# Application Title: A Description
 
-This application allows the user to do x, y, and z. Maybe here's a reason why I
-wanted to do this project, or came up with this idea.
+# Bobs Bites! A place to store tarantula bite reports.
+
+Bobs bites lets users create an account and log tarantula bite reports by signing into their account then clicking the Start Report button and filling in the information needed. Then submit their report. After that, the user can add reports, edit reports, and even delete whole reports. This is the first version of Bobs Bites but there is so much more to come in the future. Future versions will include the ability for users to post pictures of tarantulas and their bite. Also the user will be able to view all users bite reports and navigate through them easily to find the information they need.
 
 ## Important Links
 
-- [Other Repo](www.link.com)
 - [Deployed API](www.link.com)
 - [Deployed Client](www.link.com)
 

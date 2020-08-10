@@ -18,7 +18,9 @@ $(() => {
   $('#sign-in-button').on('click', authEvents.showSignIn)
   $('#sign-up').on('submit', authEvents.onSignUp)
   $('#sign-in').on('submit', authEvents.onSignIn)
-  $('#change-password-button').on('click', authEvents.showChangePassword)
+  $('#change-password-button').click(function () {
+    $('#change-password').toggle()
+  })
   $('#change-password').on('submit', authEvents.onChangePassword)
   $('#sign-out').on('click', authEvents.onSignOut)
   // now for my report events
