@@ -10,8 +10,8 @@ Bobs bites lets users create an account and log tarantula bite reports by signin
 
 ## Important Links
 
-- [Deployed API](www.link.com)
-- [Deployed Client](www.link.com)
+- [Deployed API](https://bobs-bites-api.herokuapp.com/)
+- [Deployed Client](https://thelog1.github.io/bobs-bites/)
 
 ## Planning Story
 
