@@ -1,6 +1,6 @@
 
 {{log report}}
- <section class="report-window" data-id="{{report._id}}">
+ <section id ="report-window" class="report-window" data-id="{{report._id}}">
    <h3>
      {{report.species}}
    </h3>
@@ -15,9 +15,10 @@
    No!
    {{/if}}
    </div>
-   <div class="card card-body reports-index-info">
+   <div class="reports-index-info">
    <p>Bite Info:</p>
    {{report.info}}
+   <form id="edit-form"><textarea name="info" class="bite-edit-box" rows="2" cols="20">{{report.info}}</textarea><button type="submit" class="btn btn-warning update-report">Update Info</button></form>
    </div>
-   <a href="#" class="btn btn-warning update-report">update</a>
+   <button class="btn btn-warning edit-report-button">Edit</button>
  </section>

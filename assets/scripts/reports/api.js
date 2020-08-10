@@ -2,7 +2,6 @@ const config = require('../config')
 const store = require('../store')
 
 const createReport = function (formData) {
-  console.log(formData)
   return $.ajax({
     method: 'POST',
     url: config.apiUrl + '/reports',
@@ -34,10 +33,13 @@ const showOneReport = function (id) {
 const updateReport = function (formData) {
   return $.ajax({
     method: 'PATCH',
-    url: config.apiUrl + '/reports/' + formData.report.id,
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
+    },
+    url: config.apiUrl + '/reports/' + formData.reportId,
     data: {
       report: {
-        info: formData.report.info
+        info: formData.info
       }
     }
   })
