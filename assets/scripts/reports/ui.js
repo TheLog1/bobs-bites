@@ -18,6 +18,7 @@ const createReportSuccess = function () {
 }
 // after it shows all reports
 const showReportsSuccess = function (res) {
+  $('.reports-index').empty()
   // success message
   $('#signed-in-message').text('Here Are Your Reports!')
   // it clears window if already viewing single report.
@@ -114,7 +115,6 @@ const deleteReportSuccess = function () {
   $('#signed-in-message-2').text('Report Deleted!')
   // showing the reports
   $('#show-reports-button').click()
-  $('.reports-index').empty()
 }
 
 const deleteReportFailure = function () {
