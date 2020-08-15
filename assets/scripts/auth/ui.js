@@ -5,6 +5,8 @@ const signUpSuccess = function () {
   $('#sign-up').hide()
   $('#sign-in').show()
   $('#sign-up')[0].reset()
+  $('#sign-up-button').show()
+  $('#sign-in-button').hide()
 }
 const signUpFailure = function () {
   $('#message').text('Sign Up failed :(')

@@ -30,6 +30,9 @@ const addHandlers = () => {
   $('#start-report').click(function () {
     $('#report').toggle()
   })
+  $('.submit-report').click(function () {
+    $('.signed-in-message-2').text('Report submitted!')
+  })
   // submitting the report.
   $('#report').on('submit', submitReport)
   // then showing the reports list
