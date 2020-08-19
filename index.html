@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>BOBS BITES</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <div style="height: 100px">
+        <div class="text-center mx-auto h-100 col-8 box-top">
+          <h1>Bobs Bites</h1>
+          <p>A Place To Store Tarantula Bite Reports!</p>
+        </div>
+      </div>
+      <div id="report-page" class="col-12 report-page">
+        <button id="change-password-button" class="change-password-button">Change Password?</button>
+        <form id="change-password">
+          <input name="passwords[old]" placeholder="old password" type="password">
+          <input name="passwords[new]" placeholder="new password" type="password">
+          <button type="submit" class="change-password-submit">change password</button>
+        </form>
+        <button class="sign-out" id="sign-out">Sign Out</button><br>
+        <div class="signed-in-message-2"id="signed-in-message-2"></div>
+        <div class="signed-in-message"id="signed-in-message"></div>
+        <button class="show-reports-button" id="show-reports-button">Show Reports!</button>
+        <button class="start-report" id="start-report">Start Report!</button>
+        <form id="report">
+          <label for="species" class="species">What Species Bit You?:</label>
+          <input name="species" placeholder="Species" type="text"><br>
+          <label for="potency" class="potency">Venom Potency From 1-10:</label>
+            <select id="potency" name="potency">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+          <label for="bite-info" class="bite-info">Tell Me About Your Bite In Detail:</label>
+          <textarea name="info" class="bite-info-box" rows="2" cols="20"></textarea><br>
+        <label for="medicallySignificant" class="medicallySignificant">Should You Go To The Hospital?</label>
+          <select id="medicallySignificant" name="medicallySignificant">
+            <option value=true>Yes</option>
+            <option value=false>No</option>
+          </select><br>
+          <button class="submit-report"type="submit">Submit Your Report!</button>
+        </form>
+        <div class="reports-index"></div>
+        <div class="report-index"></div>
+      </div>
+     <div id="main-page" style="height: 400px" class="main-page">
+        <div id="start-page" class="text-center mx-auto h-100 col-6 signIn-signUp">
+          <button class="h-25 w-25 my-auto mx-auto sign-up-button"id="sign-up-button">Sign up?</button>
+            <div class="my-auto h-25 message"id="message"></div>
+          <button class="h-25 w-25 my-auto mx-auto sign-in-button"id="sign-in-button">sign in?</button>
+          <form class="mx-auto my-auto text-center sign-up" id="sign-up">
+               <input name="credentials[email]" placeholder="email here" type="email">
+               <input name="credentials[password]" placeholder="password here" type="password">
+               <input name="credentials[password_confirmation]" placeholder="confirm password here" type="password">
+               <button class="submit-sign-up" type="submit">sign up</button>
+           </form>
+           <form class="mx-auto my-auto text-center sign-in" id="sign-in">
+               <input name="credentials[email]" placeholder="email here" type="email"/>
+               <input name="credentials[password]" placeholder="password here" type="password"/>
+               <button class="submit-sign-in"type="submit">sign in</button>
+           </form>
+            </div>
+        </div>
+
+    <div class="col-12 box-bottom">
+      <footer>Created By: Logan Schneider</footer>
+    </div>
+    </body>
+</html>
